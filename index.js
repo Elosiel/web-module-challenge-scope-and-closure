@@ -28,7 +28,13 @@ function processFirstItem(stringList, callback) {
  * 
  * 1. What is the difference between counter1 and counter2?
  * 
+ * The First one reaches inside the lexical scope, while the second search is global in scope.
+ * 
+ * 
  * 2. Which of the two uses a closure? How can you tell?
+ * 
+ * The second example, was mentioned from within the scope, but was sought in the global scope.
+ * 
  * 
  * 3. In what scenario would the counter1 code be preferable? In what scenario would counter2 be better? 
  *
@@ -56,11 +62,14 @@ function counter2() {
 
 Write a function called `inning` that returns a random number of points that a team scored in an inning. This should be a whole number between 0 and 2. */
 
-function inning(/*Code Here*/){
+function inning(soccer){
 
-    /*Code Here*/
+    let score = 0 
+    return score = Math.round(Math.random() *3);
 
 }
+
+console.log(inning(1))
 
 /* Task 3: finalScore()
 
@@ -76,11 +85,19 @@ finalScore(inning, 9) might return:
 
 */ 
 
-function finalScore(/*code Here*/){
+function finalScore(callback, innings){
 
-  /*Code Here*/
+  let final = {Home:0, Away: 0};
 
+  for (let i = 0; i < innings; i++){
+      final.Home += callback();
+      final.Away += callback();
+  }
+  return final;
 }
+
+console.log(finalScore(inning, 9 ));
+
 
 /* Task 4: 
 
@@ -106,5 +123,8 @@ Final Score: awayTeam - homeTeam */
 function scoreboard(/* CODE HERE */) {
   /* CODE HERE */
 }
+
+
+
 
 

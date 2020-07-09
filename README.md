@@ -27,24 +27,30 @@ There are layers upon layers of nested functions within the game of baseball. Yo
 
 ### Task 1 - Set Up Project and Tests
 
-1. Fork repo and add TL as collaborator on Github
-2. Clone _your_ fork (not Lambda's repo by mistake!)
-3. `cd` into your newly cloned repository
-4. Create a new branch by typing `git checkout -b <firstName-lastName>`
-5. Work on your branch, push commits and create PR as usual
+1. [X] Fork repo and add TL as collaborator on Github
+2. [X] Clone _your_ fork (not Lambda's repo by mistake!)
+3. [X] `cd` into your newly cloned repository
+4. [X] Create a new branch by typing `git checkout -b <firstName-lastName>`
+5. [X] Work on your branch, push commits and create PR as usual
 
 ### Task 2a - MVP code
 
-Find the file `index.js` and complete the tasks.
+[] Find the file `index.js` and complete the tasks.
 
 ### Task 2b - Written questions
 
 Edit the `ReadMe` file with your answers.
 
-1. In your own words, define closure (1-2 sentences).
-2. Study the following code, then answer the questions below.
+[X] 1. In your own words, define closure (1-2 sentences).
+
+It is the possibility to access an external function from an internal function.
+
+[X] 2. Study the following code, then answer the questions below.
 
 ```js
+
+const zoesRoll = personalDice("Zoe");
+
 function personalDice(name){
   return function(){
       // generate random number between 1 and 6
@@ -62,11 +68,30 @@ dansRoll();
 dansRoll();
 ```
 
-a. Where is closure used in this code? How can you tell?
-b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+[X] a. Where is closure used in this code? How can you tell?
+
+The closure is inside the function, proof of that when I remove the console.log out of the Function, I get an error message on the console.
+
+[X] b. Compare and contrast calling `dansRoll` the first and second time. 
+
+What is always the same? 
+
+Always the same is the name that does not change even giving a refresh.
+
+What could change?
+
+The random number between 0 and 6 is always different for each refresh.
+
+
 c. What is the lexical scope of `newRoll`? 
 
-### Task 2c - Exit Ticket
+Return Function (){
+    
+}
+
+
+
+[X] ### Task 2c - Exit Ticket
 
 Once you begin, you will have 15 minutes to answer the questions [here](https://app.codesignal.com/public-test/WjSzNh9gDrD8Xn8hw/enY3yPRP3nEm7E).
 
