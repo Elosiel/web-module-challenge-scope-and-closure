@@ -105,23 +105,24 @@ Create a function called `scoreboard` that accepts the following parameters:
 
 (1) Callback function `getInningScore`
 (2) Callback function `inning`
-(3) A number of innings
+(333) A number of innings
 
 and returns the score at each pont in the game, like so:
-1st inning: awayTeam - homeTeam
-2nd inning: awayTeam - homeTeam
-3rd inning: awayTeam - homeTeam
-4th inning: awayTeam - homeTeam
-5th inning: awayTeam - homeTeam
-6th inning: awayTeam - homeTeam
-7th inning: awayTeam - homeTeam
-8th inning: awayTeam - homeTeam
-9th inning: awayTeam - homeTeam
-Final Score: awayTeam - homeTeam */
+1st inning: 0 - 1
+2nd inning: 1 - 2
+3rd inning: 1 - 3
+4th inning: 2 - 3
+5th inning: 3 - 3
+6th inning: 3 - 6
+7th inning: 4 - 7
+8th inning: 7 - 9
+9th inning: 7 - 10
+Final Score: 7 - 10 */
 
 
-function scoreboard(/* CODE HERE */) {
-  /* CODE HERE */
+function scoreboard(callback, innings) {
+  let scores = {home: 0, away: 0};
+    
 }
 
 
